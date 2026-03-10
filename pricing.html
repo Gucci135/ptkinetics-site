@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - PT Kinetics | Fort Walton Beach, FL</title>
+  <meta name="description" content="Transparent, straightforward pricing for PT Kinetics. Cash-based physical therapy with bundles, discounts, and superbills for insurance reimbursement.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .price-table { width:100%; border-collapse:collapse; margin-top:20px; }
+    .price-table th { background:var(--navy); color:var(--white); padding:12px 16px; text-align:left; font-size:0.82rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; }
+    .price-table td { padding:12px 16px; border-bottom:1px solid var(--border); font-size:0.9rem; color:var(--text-mid); }
+    .price-table tr:last-child td { border-bottom:none; }
+    .price-table tr:hover td { background:var(--cream); }
+    .price-val { font-family:'Playfair Display',serif; font-weight:700; color:var(--navy); font-size:1rem; white-space:nowrap; }
+    .coming-soon { font-size:0.78rem; color:var(--text-light); font-style:italic; }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.jpg" alt="PT Kinetics Logo">
+    <div class="nav-logo-text">
+      <span class="brand">PT Kinetics</span>
+      <span class="tagline">Physical Therapy &amp; Performance</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="pricing.html" class="active">Pricing</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li class="nav-cta-li"><a href="contact.html">Book Appointment</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="nav-mobile" id="mobileNav">
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html" class="active">Pricing</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="contact.html" class="mob-cta">Book Appointment</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-top">
+  <div class="page-hero">
+    <div class="page-hero-label">Transparent Pricing</div>
+    <h1>Simple, Honest<br><span style="color:var(--coral);">Pricing</span></h1>
+    <p>No surprises. No hidden fees. Know exactly what you are paying before every session.</p>
+  </div>
+</div>
+
+<!-- PRICING TABLES -->
+<section class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;" class="pricing-grid">
+
+    <!-- In-Clinic -->
+    <div class="card card-top-coral">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:4px;">In-Clinic Physical Therapy</h3>
+      <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:16px;">Fort Walton Beach clinic visits</p>
+      <table class="price-table">
+        <tr><th>Service</th><th>Price</th></tr>
+        <tr><td>Initial Evaluation</td><td class="price-val">$170</td></tr>
+        <tr><td>Follow-up / Daily Visit</td><td class="price-val">$120</td></tr>
+      </table>
+    </div>
+
+    <!-- Virtual -->
+    <div class="card card-top-sky">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:4px;">Virtual Physical Therapy</h3>
+      <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:16px;">Telehealth sessions from anywhere</p>
+      <table class="price-table">
+        <tr><th>Service</th><th>Price</th></tr>
+        <tr><td>Initial Evaluation</td><td class="price-val">$135</td></tr>
+        <tr><td>Follow-up / Daily Visit</td><td class="price-val">$100</td></tr>
+      </table>
+    </div>
+
+    <!-- At-Home -->
+    <div class="card card-top-coral" style="grid-column:span 2;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--navy);margin-bottom:4px;">At-Home Physical Therapy</h3>
+      <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:16px;">We come to you. Add-on services are an additional $35-45 (within 10 mi) or $50-60 (over 10 mi).</p>
+      <div style="overflow-x:auto;">
+        <table class="price-table">
+          <tr><th>Service</th><th>Within 10 Miles</th><th>Over 10 Miles</th></tr>
+          <tr><td>Initial Evaluation</td><td class="price-val">$200</td><td class="price-val">$230</td></tr>
+          <tr><td>Follow-up / Daily Visit</td><td class="price-val">$170</td><td class="price-val">$185</td></tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- A LA CARTE -->
+<section class="section section-bg">
+  <div class="section-header-split">
+    <div>
+      <span class="section-label">Specialty Services</span>
+      <h2 class="section-title" style="margin-bottom:0;">Dry Needling and<br><em>A La Carte Services</em></h2>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;" class="pricing-grid">
+    <div class="card card-top-coral">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:16px;">Dry Needling</h3>
+      <table class="price-table">
+        <tr><th>Service</th><th>Price</th></tr>
+        <tr><td>1-2 muscles</td><td class="price-val">$80</td></tr>
+        <tr><td>3+ muscles</td><td class="price-val">$95</td></tr>
+      </table>
+    </div>
+    <div class="card card-top-sky">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:16px;">A La Carte Services</h3>
+      <table class="price-table">
+        <tr><th>Service</th><th>Price</th></tr>
+        <tr><td>Cupping (30 min)</td><td class="price-val">$35</td></tr>
+        <tr><td>Passive Stretching + Joint Mobilizations (30 min)</td><td class="price-val">$60</td></tr>
+        <tr><td>Instrument-Assisted Soft Tissue Mobilization (20 min)</td><td class="price-val">$40</td></tr>
+        <tr><td>Joint Mobilization / Manipulation</td><td class="price-val">$50</td></tr>
+      </table>
+    </div>
+    <div class="card card-top-coral">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:16px;">Wellness and Movement Screening</h3>
+      <table class="price-table">
+        <tr><th>Service</th><th>Price</th></tr>
+        <tr><td>Annual Wellness Screen (in-clinic)</td><td class="price-val">$130</td></tr>
+        <tr><td>Annual Wellness Screen (virtual)</td><td class="price-val">$120</td></tr>
+      </table>
+    </div>
+    <div class="card card-top-sky">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:8px;">Recovery Package (45 min)</h3>
+      <p style="font-size:0.85rem;color:var(--text-mid);margin-bottom:16px;">Choose any combination of 3 services from the list below.</p>
+      <p style="font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--coral);font-weight:700;margin-bottom:12px;">$110</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+        <li style="display:flex;gap:8px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--coral);">&#10003;</span> Cupping</li>
+        <li style="display:flex;gap:8px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--coral);">&#10003;</span> Dry Needling</li>
+        <li style="display:flex;gap:8px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--coral);">&#10003;</span> Soft Tissue Mobilization</li>
+        <li style="display:flex;gap:8px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--coral);">&#10003;</span> Instrument-Assisted Soft Tissue Mobilization</li>
+        <li style="display:flex;gap:8px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--coral);">&#10003;</span> Passive Range of Motion / Stretching</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DISCOUNTS AND PACKAGES -->
+<section class="section">
+  <div class="section-header-split">
+    <div>
+      <span class="section-label">Save More</span>
+      <h2 class="section-title" style="margin-bottom:0;">Discounts and<br><em>Bundle Packages</em></h2>
+    </div>
+  </div>
+  <div class="grid-3">
+    <div class="card card-top-coral">
+      <div class="card-icon">&#127981;</div>
+      <h3>Military and First Responders</h3>
+      <p>10% off your 1st visit and every 5th visit as a thank you for your service.</p>
+    </div>
+    <div class="card card-top-sky">
+      <div class="card-icon">&#127873;</div>
+      <h3>Buy 5, Get 1 Free</h3>
+      <p>Purchase 5 therapy sessions and receive 1 session free. Buy 10 sessions and receive 1 free plus a free T-shirt.</p>
+    </div>
+    <div class="card card-top-coral">
+      <div class="card-icon">&#128101;</div>
+      <h3>Referral Program</h3>
+      <p>1st referral: 10% off your next service. 3 referrals: free T-shirt or hat. 5 referrals: free service.</p>
+    </div>
+    <div class="card card-top-sky">
+      <div class="card-icon">&#127947;</div>
+      <h3>CFEA Members</h3>
+      <p>CrossFit Epically Awesome members receive 10% off all services.</p>
+    </div>
+  </div>
+  <div style="background:var(--cream);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin-top:32px;">
+    <p style="font-size:0.85rem;color:var(--text-mid);line-height:1.65;"><strong style="color:var(--navy);">Discount Stacking Policy:</strong> Multiple discounts can be used on the same visit. The first discount is applied in full, and any additional discounts are applied at half value. Pricing subject to change. Specials may not be combined with all offers.</p>
+  </div>
+</section>
+
+<!-- WHY CASH-BASED -->
+<section class="section section-navy" id="cash">
+  <div style="max-width:800px;margin:0 auto;">
+    <span class="section-label sky">Our Model</span>
+    <h2 class="section-title light">Why <em class="sky">Cash-Based?</em></h2>
+    <p class="section-sub light" style="margin-bottom:48px;">Switching to a cash-based physical therapy model gives you more control, better results, and a more personal experience.</p>
+    <div class="grid-3" style="gap:20px;">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+        <p style="font-size:1.4rem;margin-bottom:12px;">&#9203;</p>
+        <h4 style="color:var(--white);font-size:0.92rem;font-weight:600;margin-bottom:6px;">More Time With You</h4>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.55;font-weight:300;">Full one-on-one sessions dedicated entirely to you. No rushing, no quotas.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+        <p style="font-size:1.4rem;margin-bottom:12px;">&#128683;</p>
+        <h4 style="color:var(--white);font-size:0.92rem;font-weight:600;margin-bottom:6px;">No Visit Limits</h4>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.55;font-weight:300;">Insurance won't cut off your care. You and your therapist make the decisions.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+        <p style="font-size:1.4rem;margin-bottom:12px;">&#129535;</p>
+        <h4 style="color:var(--white);font-size:0.92rem;font-weight:600;margin-bottom:6px;">Transparent Costs</h4>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.55;font-weight:300;">Know exactly what you're paying before every session. No surprise bills.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+        <p style="font-size:1.4rem;margin-bottom:12px;">&#127919;</p>
+        <h4 style="color:var(--white);font-size:0.92rem;font-weight:600;margin-bottom:6px;">Flexible Treatment Plans</h4>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.55;font-weight:300;">Your care frequency is based on your condition, goals, and schedule. Not an insurance template.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+        <p style="font-size:1.4rem;margin-bottom:12px;">&#9889;</p>
+        <h4 style="color:var(--white);font-size:0.92rem;font-weight:600;margin-bottom:6px;">Direct Access</h4>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.55;font-weight:300;">No referral needed in most cases. Skip the wait and get started right away.</p>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;">
+        <p style="font-size:1.4rem;margin-bottom:12px;">&#128203;</p>
+        <h4 style="color:var(--white);font-size:0.92rem;font-weight:600;margin-bottom:6px;">Superbills Available</h4>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.55;font-weight:300;">We provide detailed superbills you can submit to your insurer for out-of-network reimbursement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPERBILL EXPLAINER -->
+<section class="section" id="superbill">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="two-col">
+    <div>
+      <span class="section-label">Have Insurance?</span>
+      <h2 class="section-title">We Provide<br><em>Superbills</em></h2>
+      <p style="color:var(--text-mid);font-size:1rem;line-height:1.72;font-weight:300;margin-bottom:28px;">A superbill is an itemized receipt of services that includes diagnosis codes and procedure codes. You can submit it directly to your insurance company as a claim for out-of-network reimbursement. If your plan has out-of-network benefits, you may be reimbursed for a portion of the cost.</p>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:32px;height:32px;background:rgba(217,79,61,0.1);border:1px solid rgba(217,79,61,0.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.88rem;font-weight:700;color:var(--coral);">1</div>
+          <div>
+            <h4 style="font-size:0.92rem;font-weight:600;color:var(--navy);margin-bottom:2px;">Come in for your session</h4>
+            <p style="font-size:0.83rem;color:var(--text-mid);line-height:1.55;font-weight:300;">Pay at the time of service as normal.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:32px;height:32px;background:rgba(217,79,61,0.1);border:1px solid rgba(217,79,61,0.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.88rem;font-weight:700;color:var(--coral);">2</div>
+          <div>
+            <h4 style="font-size:0.92rem;font-weight:600;color:var(--navy);margin-bottom:2px;">Receive your superbill</h4>
+            <p style="font-size:0.83rem;color:var(--text-mid);line-height:1.55;font-weight:300;">We provide a detailed superbill with all the codes your insurance needs.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;">
+          <div style="width:32px;height:32px;background:rgba(217,79,61,0.1);border:1px solid rgba(217,79,61,0.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.88rem;font-weight:700;color:var(--coral);">3</div>
+          <div>
+            <h4 style="font-size:0.92rem;font-weight:600;color:var(--navy);margin-bottom:2px;">Submit to your insurer</h4>
+            <p style="font-size:0.83rem;color:var(--text-mid);line-height:1.55;font-weight:300;">Submit the superbill to your insurance company and receive reimbursement directly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background:var(--cream);border:1px solid var(--border);border-radius:14px;padding:40px;">
+      <p style="font-size:1.5rem;margin-bottom:16px;">&#128161;</p>
+      <h4 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:12px;">Before your first visit</h4>
+      <p style="font-size:0.88rem;color:var(--text-mid);line-height:1.65;font-weight:300;margin-bottom:16px;">Call your insurance company and ask about your out-of-network physical therapy benefits and deductible. This helps you understand how much you may be reimbursed.</p>
+      <p style="font-size:0.88rem;color:var(--text-mid);line-height:1.65;font-weight:300;">Have questions about the superbill process? Ask us and we will walk you through it.</p>
+      <a href="contact.html" class="btn btn-primary btn-sm mt-24" style="width:100%;justify-content:center;">Ask Us About Superbills</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--navy-dark);padding:80px 8%;text-align:center;">
+  <h2 style="font-family:'Playfair Display',serif;color:var(--white);font-size:clamp(1.9rem,3.2vw,2.8rem);font-weight:700;margin-bottom:16px;">Questions About Pricing?</h2>
+  <p style="color:rgba(255,255,255,0.62);font-size:1.05rem;font-weight:300;max-width:460px;margin:0 auto 36px;">We're happy to talk through costs and payment options before you book. Just give us a call or send a message.</p>
+  <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+    <a href="contact.html" class="btn btn-primary">Book an Appointment</a>
+    <a href="tel:8503782137" class="btn btn-outline-light">(850) 378-2137</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.jpg" alt="PT Kinetics Logo">
+      <p>Personalized physical therapy and performance training in Fort Walton Beach, FL.</p>
+      <p class="footer-phone"><a href="tel:8503782137">(850) 378-2137</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html#rehab">Physical Therapy</a></li>
+        <li><a href="services.html#manual">Manual Therapy</a></li>
+        <li><a href="services.html#performance">Sports Performance</a></li>
+        <li><a href="services.html#lifestyle">Wellness and Lifestyle</a></li>
+        <li><a href="services.html#telehealth">Telehealth / Home Visits</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="#cash">Why Cash-Based?</a></li>
+        <li><a href="#superbill">Superbill Info</a></li>
+        <li><a href="contact.html#forms">Patient Forms</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="reviews.html">Patient Reviews</a></li>
+        <li><a href="https://g.page/r/CU9PrtoyOIDMEAI/review" target="_blank">Leave a Google Review</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PT Kinetics Physical Therapy and Performance. All rights reserved.</p>
+    <p>Fort Walton Beach, Florida</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<style>
+@media(max-width:768px){
+  .pricing-grid, .two-col { display:block!important; }
+  .pricing-grid > *, .two-col > * { margin-bottom:24px; }
+  .pricing-grid > [style*="grid-column:span 2"] { grid-column:span 1; }
+  .grid-3 { grid-template-columns:1fr!important; }
+}
+</style>
+</body>
+</html>
