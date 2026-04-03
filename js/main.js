@@ -22,7 +22,7 @@ if (hamburger && mobileNav) {
   });
 }
 
-// Active nav link highlight
+// Active nav link
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {
   const href = link.getAttribute('href');
@@ -31,7 +31,7 @@ document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {
   }
 });
 
-// Contact form - Formspree AJAX submission
+// Formspree AJAX form
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
@@ -40,16 +40,12 @@ if (contactForm) {
     const originalText = btn.textContent;
     btn.textContent = 'Sending...';
     btn.disabled = true;
-
-    const formData = new FormData(contactForm);
-
     try {
       const response = await fetch(contactForm.action, {
         method: 'POST',
-        body: formData,
+        body: new FormData(contactForm),
         headers: { 'Accept': 'application/json' }
       });
-
       if (response.ok) {
         contactForm.style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
@@ -57,7 +53,7 @@ if (contactForm) {
         btn.textContent = 'Something went wrong. Please call us.';
         btn.disabled = false;
       }
-    } catch (err) {
+    } catch {
       btn.textContent = originalText;
       btn.disabled = false;
       alert('Network error. Please call us at (850) 378-2137.');
@@ -65,14 +61,13 @@ if (contactForm) {
   });
 }
 
-// Smooth scroll for anchor links
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - 84;
-      window.scrollTo({ top, behavior: 'smooth' });
+      window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 84, behavior: 'smooth' });
     }
   });
 });
