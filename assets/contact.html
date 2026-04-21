@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - PT Kinetics | Fort Walton Beach, FL</title>
+  <meta name="description" content="Book a physical therapy appointment with PT Kinetics in Fort Walton Beach, FL. Call (850) 378-2317 or fill out our contact form.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.jpg" alt="PT Kinetics Logo">
+    <div class="nav-logo-text">
+      <span class="brand">PT Kinetics</span>
+      <span class="tagline">Physical Therapy &amp; Performance</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li class="nav-cta-li"><a href="contact.html" class="active">Book Appointment</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="nav-mobile" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html" class="mob-cta">Book Appointment</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-top">
+  <div class="page-hero" style="padding-bottom:60px;">
+    <div class="page-hero-label">Get Started</div>
+    <h1>Book Your<br><span style="color:var(--coral);">Appointment</span></h1>
+    <p>Fill out the form below or give us a call. We will get back to you within one business day.</p>
+  </div>
+</div>
+
+<!-- CONTACT FORM + INFO -->
+<section class="section" style="display:grid;grid-template-columns:1fr 1.4fr;gap:64px;align-items:start;" class="contact-grid">
+
+  <!-- Left -->
+  <div>
+    <span class="section-label">Reach Us</span>
+    <h2 class="section-title" style="font-size:clamp(1.8rem,2.8vw,2.4rem);">We Are Here<br>to <em>Help</em></h2>
+    <p class="section-sub" style="margin-bottom:36px;">Have questions before booking? Call, email, or fill out the form and we will get back to you quickly.</p>
+
+    <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:40px;">
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div class="contact-icon-wrap">P</div>
+        <div>
+          <p style="font-size:0.76rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px;">Phone</p>
+          <a href="tel:8503782317" style="font-size:1.05rem;color:var(--navy);font-weight:600;">(850) 378-2317</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div class="contact-icon-wrap">E</div>
+        <div>
+          <p style="font-size:0.76rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px;">Email</p>
+          <a href="mailto:info.ptkinetics@gmail.com" style="font-size:0.97rem;color:var(--navy);font-weight:600;">info.ptkinetics@gmail.com</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div class="contact-icon-wrap">L</div>
+        <div>
+          <p style="font-size:0.76rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px;">Location</p>
+          <p style="font-size:1rem;color:var(--navy);font-weight:500;">Fort Walton Beach, Florida</p>
+          <p style="font-size:0.82rem;color:var(--text-mid);font-weight:300;margin-top:2px;">At-home and telehealth visits also available</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;">
+        <div class="contact-icon-wrap">H</div>
+        <div>
+          <p style="font-size:0.76rem;font-weight:600;color:var(--text-light);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px;">Hours</p>
+          <p style="font-size:1rem;color:var(--navy);font-weight:500;">By Appointment</p>
+          <p style="font-size:0.82rem;color:var(--text-mid);font-weight:300;margin-top:2px;">Flexible scheduling to fit your life</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="tel:8503782317" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:12px;">Call Now</a>
+    <a href="https://g.page/r/CU9PrtoyOIDMEAI/review" target="_blank" rel="noopener" class="btn btn-navy" style="width:100%;justify-content:center;">Read Our Google Reviews</a>
+  </div>
+
+  <!-- Right: Form -->
+  <div style="background:var(--cream);border-radius:16px;padding:48px;border:1px solid var(--border);">
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--navy);font-weight:700;margin-bottom:6px;">Request an Appointment</h3>
+    <p style="color:var(--text-mid);font-size:0.88rem;margin-bottom:32px;font-weight:300;">We will reach out within one business day to confirm your appointment.</p>
+
+    <form id="contactForm" action="https://formspree.io/f/mykbeabo" method="POST" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(850) 000-0000" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Service of Interest</label>
+        <select id="service" name="service">
+          <option value="">Select a service...</option>
+          <option value="initial-eval">Initial Evaluation (New Patient)</option>
+          <option value="pt-rehab">Physical Therapy and Rehabilitation</option>
+          <option value="post-surgical">Post-Surgical Rehabilitation</option>
+          <option value="sports-injury">Sports Injury Rehabilitation</option>
+          <option value="manual-therapy">Manual Therapy (Dry Needling, Cupping, etc.)</option>
+          <option value="performance">Athletic Performance Training</option>
+          <option value="personal-training">Personal Training</option>
+          <option value="running">Running Program and Gait Analysis</option>
+          <option value="pain">Chronic Pain Management</option>
+          <option value="spine">Spine Care Program</option>
+          <option value="vestibular">Vestibular / Balance Rehabilitation</option>
+          <option value="wellness">Annual Wellness Screening</option>
+          <option value="telehealth">Telehealth Visit</option>
+          <option value="home-visit">At-Home Visit</option>
+          <option value="not-sure">Not sure, need guidance</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="preferred">Preferred Contact Method</label>
+        <select id="preferred" name="preferred">
+          <option value="phone">Phone Call</option>
+          <option value="text">Text Message</option>
+          <option value="email">Email</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us about your goals or concerns</label>
+        <textarea id="message" name="message" placeholder="E.g. recovering from knee surgery, chronic back pain, training for a marathon..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Request Appointment</button>
+    </form>
+
+    <div id="formSuccess" style="display:none;background:rgba(27,61,111,0.06);border:1px solid rgba(75,189,232,0.3);border-radius:10px;padding:28px;text-align:center;margin-top:16px;">
+      <h4 style="font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:8px;">Request Received!</h4>
+      <p style="font-size:0.9rem;color:var(--text-mid);line-height:1.65;font-weight:300;">Thank you for reaching out. We will contact you within one business day to confirm your appointment. We look forward to meeting you!</p>
+    </div>
+
+    <p style="font-size:0.76rem;color:var(--text-light);margin-top:16px;text-align:center;">Your information is private and will never be shared.</p>
+  </div>
+</section>
+
+<!-- PATIENT FORMS -->
+<section class="section section-bg" id="forms">
+  <div class="text-center mb-48">
+    <span class="section-label" style="justify-content:center;">New Patients</span>
+    <h2 class="section-title">Patient Forms</h2>
+    <p class="section-sub" style="margin:0 auto;">Please download and complete the forms relevant to your visit before your first appointment.</p>
+  </div>
+  <div class="grid-2 gap-32">
+    <a href="assets/Medical_hx.pdf" download class="card card-top-coral" style="display:block;cursor:pointer;text-decoration:none;">
+      <h3>Medical Background Form</h3>
+      <p>Complete medical history including conditions, medications, allergies, surgical history, and lifestyle information. Required for all new patients.</p>
+      <p style="margin-top:16px;font-size:0.82rem;font-weight:600;color:var(--coral);">Click to download PDF</p>
+    </a>
+    <a href="assets/Current_injury.pdf" download class="card card-top-sky" style="display:block;cursor:pointer;text-decoration:none;">
+      <h3>Current Injury Form</h3>
+      <p>Details about your current injury or complaint including symptoms, pain levels, and what makes your symptoms better or worse.</p>
+      <p style="margin-top:16px;font-size:0.82rem;font-weight:600;color:var(--sky);">Click to download PDF</p>
+    </a>
+    <a href="assets/CONSENT_TO_TREAT.pdf" download class="card card-top-coral" style="display:block;cursor:pointer;text-decoration:none;">
+      <h3>Consent to Treat</h3>
+      <p>Financial agreement, media release, cancellation policy, and minor consent. Required for all patients before treatment begins.</p>
+      <p style="margin-top:16px;font-size:0.82rem;font-weight:600;color:var(--coral);">Click to download PDF</p>
+    </a>
+    <a href="assets/Dry_needle_Consent.pdf" download class="card card-top-sky" style="display:block;cursor:pointer;text-decoration:none;">
+      <h3>Dry Needling Consent</h3>
+      <p>Informed consent for dry needling treatment including risks, Florida state disclosure, and patient screening questions. Required if receiving dry needling.</p>
+      <p style="margin-top:16px;font-size:0.82rem;font-weight:600;color:var(--sky);">Click to download PDF</p>
+    </a>
+  </div>
+  <p style="text-align:center;color:var(--text-light);font-size:0.82rem;margin-top:24px;">Paper copies are also available at your first visit.</p>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="text-center mb-48">
+    <span class="section-label" style="justify-content:center;">Common Questions</span>
+    <h2 class="section-title">Frequently Asked<br><em>Questions</em></h2>
+  </div>
+  <div style="max-width:780px;margin:0 auto;">
+
+    <details class="faq-item" open>
+      <summary>What should I expect at my first appointment? <span class="faq-arrow">+</span></summary>
+      <p>Your initial evaluation is typically 60 to 75 minutes. We will do a comprehensive assessment of your movement, strength, and pain, discuss your goals and medical history, and develop a personalized treatment plan together. You will leave with a clear plan and often a home exercise program to get started right away.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Why is PT Kinetics a cash-based practice? <span class="faq-arrow">+</span></summary>
+      <p>The cash-based model allows us to focus entirely on your care rather than insurance paperwork and billing requirements. Here is what that means for you as a patient:</p>
+      <ul>
+        <li>Full one-on-one sessions with no double or triple booking</li>
+        <li>Treatment frequency based on your condition and goals, not an insurance template</li>
+        <li>No pre-authorizations, no visit limits, and no coverage denials mid-treatment</li>
+        <li>Transparent pricing so you know exactly what you are paying before every session</li>
+        <li>Direct access to care with no referral required in most cases</li>
+        <li>Faster recovery due to more focused, effective treatment per session</li>
+      </ul>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you accept insurance? <span class="faq-arrow">+</span></summary>
+      <p>We do not bill insurance directly. However, we provide detailed superbills that you can submit to your insurance company for out-of-network reimbursement. Many patients with PPO plans receive partial reimbursement this way. We recommend calling your insurer before your first visit to ask about your out-of-network physical therapy benefits and deductible.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is a superbill and how does it work? <span class="faq-arrow">+</span></summary>
+      <p>A superbill is an itemized receipt of services that includes diagnosis codes (ICD-10) and procedure codes (CPT codes). You submit it directly to your insurance company as a claim for out-of-network reimbursement. The process is straightforward:</p>
+      <ul>
+        <li>Attend your session and pay at the time of service</li>
+        <li>Request a superbill from us at any time</li>
+        <li>Submit the superbill to your insurance provider</li>
+        <li>Receive reimbursement directly from your insurer based on your out-of-network benefits</li>
+      </ul>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I need a doctor's referral? <span class="faq-arrow">+</span></summary>
+      <p>In Florida, you can see a physical therapist without a doctor's referral for up to 30 days through direct access. After that, a physician referral is required to continue treatment. This means you can get started right away without waiting for a doctor's appointment.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What should I wear or bring to my appointment? <span class="faq-arrow">+</span></summary>
+      <p>Wear comfortable, loose-fitting clothing that allows access to the area being treated, such as shorts for knee or hip issues, or a tank top for shoulder concerns. Bring any relevant imaging such as X-rays or MRIs, surgical notes or previous PT records, and your completed patient forms if you have not submitted them in advance.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Are telehealth and at-home visits available? <span class="faq-arrow">+</span></summary>
+      <p>Yes. We offer both telehealth video sessions and in-home visits for patients who need extra flexibility. Telehealth sessions are available at standard virtual rates. At-home visits may include an additional travel fee based on distance. See the pricing page for full details, or contact us to discuss your situation.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is the cancellation policy? <span class="faq-arrow">+</span></summary>
+      <p>Please cancel or reschedule at least 24 hours in advance when possible. The first late cancellation or no-show (less than 24 hours notice) has no charge. The 2nd and 3rd instances carry a $30 fee each. After 3 total no-shows or late cancellations, same-day scheduling only applies based on availability. Arriving 10 or more minutes late may require rescheduling, and 3 or more late arrivals carry a $20 fee.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Are payment plans available? <span class="faq-arrow">+</span></summary>
+      <p>Yes. We offer bundle packages such as buy 5 sessions and get 1 free, or buy 10 sessions and get 1 free plus a free T-shirt. We also have discounts for military, first responders, and CFEA members. If you need additional flexibility, contact us and we will work with you to find a solution that fits your budget.</p>
+    </details>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.jpg" alt="PT Kinetics Logo">
+      <p>Personalized physical therapy and performance training in Fort Walton Beach, FL.</p>
+      <p class="footer-phone"><a href="tel:8503782317">(850) 378-2317</a></p>
+      <p style="margin-top:6px;font-size:0.85rem;"><a href="mailto:info.ptkinetics@gmail.com" style="color:var(--sky);">info.ptkinetics@gmail.com</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="index.html#services">Physical Therapy</a></li>
+        <li><a href="index.html#services">Manual Therapy</a></li>
+        <li><a href="index.html#services">Performance and Fitness</a></li>
+        <li><a href="index.html#services">Telehealth / Home Visits</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="#forms">Patient Forms</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://g.page/r/CU9PrtoyOIDMEAI/review" target="_blank">Patient Reviews</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="contact.html">Book Appointment</a></li>
+        <li><a href="https://tkpt.net/shop/" target="_blank">Merchandise</a></li>
+        <li><a href="https://tkpt.net/recommended-products/" target="_blank">Recommended Products</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 PT Kinetics Physical Therapy and Performance. All rights reserved.</p>
+    <p>Fort Walton Beach, Florida</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<style>
+@media(max-width:768px){
+  .contact-grid { display:block !important; }
+  .contact-grid > * { margin-bottom:32px; }
+  section[style*="grid-template-columns:1fr 1.4fr"] { display:block !important; }
+  section[style*="grid-template-columns:1fr 1.4fr"] > * { margin-bottom:32px; }
+}
+</style>
+</body>
+</html>
